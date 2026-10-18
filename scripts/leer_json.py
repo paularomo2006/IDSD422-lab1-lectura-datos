@@ -8,6 +8,7 @@
 #         (recuerda del cap. 2: el JSON no llega como tabla directa)
 # TODO 4: imprime las dimensiones y las primeras filas
 
+
 import json
 import pandas as pd
 
