@@ -4,7 +4,7 @@
 
 # TODO 1: importa pandas y carga data/ventas.csv en un DataFrame
 # TODO 2: imprime las dimensiones (filas, columnas) del DataFrame
-# TODO 3: imprime las primeras filas para revisar las 
+# TODO 3: imprime las primeras filas para revisar las columnas
 
 
 import pandas as pd
