@@ -2,20 +2,22 @@
 # Completa los pasos marcados con TODO. Ejecuta desde la raíz del repositorio:
 #   python scripts/inspeccion.py
 
+import pandas as pd
+
 # TODO 1: carga data/ventas.csv
+ventas = pd.read_csv("data/ventas.csv")
+
 # TODO 2: imprime los tipos (dtypes) de cada columna
+
 # TODO 3: crea la columna derivada "ticket" = ventas / clientes
+ventas["ticket"] = ventas["ventas"]/ventas["clientes"]
+print(ventas.head())
+
 # TODO 4: calcula e imprime:
 #         - venta promedio por sucursal
 #         - ticket promedio (ventas totales / clientes totales)
 #         - sucursal con mayor y menor venta
 #         - región con mayor venta total
-
-import pandas as pd
-
-ventas = pd.read_csv("data/ventas.csv")
-ventas["ticket"] = ventas["ventas"]/ventas["clientes"]
-print(ventas.head())
 
 print(ventas["ventas"].max())
 
@@ -37,4 +39,6 @@ region_mayor = ventas_per_region["ventas"].idxmax()
 total_mayor = ventas_per_region.loc[region_mayor, "ventas"]
 
 print(f"Región con mayor venta total: {region_mayor} con un total de {total_mayor}")
+
+
 
