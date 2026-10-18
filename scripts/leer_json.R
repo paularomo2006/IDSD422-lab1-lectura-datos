@@ -6,6 +6,7 @@
 # TODO 2: convierte el resultado en data.frame si hace falta
 # TODO 3: imprime las dimensiones (dim) y las primeras filas (head)
 
+
 install.packages("jsonlite")
 library(jsonlite)
 ventas <- fromJSON("data/ventas.json")
