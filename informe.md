@@ -64,5 +64,7 @@ En cuanto a las variables categóricas, Python las representa como object y R co
 ## 5. Conclusiones y recomendación
 
 1.Los tres formatos presentan la misma cantidad de registros y variables. Esto demuestra que es posible integrar información de diferentes sistemas para realizar un análisis conjunto.
+
 2.Python y R permiten leer, organizar y analizar los reportes, aunque utilizan funciones y tipos de datos diferentes. Es importante revisar la calidad de la información para evitar errores en los cálculos.
+
 3.Guayaquil Centro presentó las mayores ventas y Cuenca las menores, mientras que Sierra fue la región con mayor venta total. Se recomienda revisar continuamente estos indicadores para identificar oportunidades de mejora y apoyar la toma de decisiones.
