@@ -29,9 +29,7 @@ print(head(ventas))
 
 # Venta promedio por sucursal
 print("Venta promedio por sucursal")
-venta_promedio <- aggregate(ventas ~ sucursal,
-                           data = ventas,
-                           FUN = mean)
+venta_promedio <- aggregate(ventas ~ sucursal, data = ventas, FUN = mean)
 print(venta_promedio)
 
 # Ticket promedio general (ventas totales / clientes totales)
@@ -40,9 +38,7 @@ ticket_promedio <- sum(ventas$ventas) / sum(ventas$clientes)
 print(ticket_promedio)
 
 # Sucursal con mayor venta total
-ventas_sucursal <- aggregate(ventas ~ sucursal,
-                             data = ventas,
-                             FUN = sum)
+ventas_sucursal <- aggregate(ventas ~ sucursal, data = ventas, FUN = sum)
 
 sucursal_mayor <- ventas_sucursal$sucursal[
   which.max(ventas_sucursal$ventas)
@@ -60,9 +56,7 @@ print("Sucursal con menor venta:")
 print(sucursal_menor)
 
 # Región con mayor venta total
-ventas_region <- aggregate(ventas ~ region,
-                          data = ventas,
-                          FUN = sum)
+ventas_region <- aggregate(ventas ~ region, data = ventas, FUN = sum)
 
 region_mayor <- ventas_region$region[
   which.max(ventas_region$ventas)
