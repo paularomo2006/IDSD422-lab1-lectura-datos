@@ -5,6 +5,7 @@
 # TODO 1: carga data/ventas.xlsx con readxl::read_excel indicando la hoja
 # TODO 2: imprime las dimensiones (dim) y las primeras filas (head)
 
+
 install.packages("readxl")
 library(readxl)
 ventas <- read_excel("data/ventas.xlsx", sheet = "ventas")
